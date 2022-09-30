@@ -8,7 +8,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'sprockets'
-gem 'elastic-apm', '4.5.1'
+#gem 'elastic-apm', '4.5.1'
+gem 'elastic-apm', git: 'https://github.com/estolfo/apm-agent-ruby.git', branch: 'kubernetes-debug'
 gem 'foreman'
 gem 'http'
 gem 'lograge'
